@@ -3,15 +3,193 @@
 
 //Custom Styles Here
 
-form{
-  width: 400px;
-  margin: 40px auto;
-  .field{
-    width: 100%;
-    margin: 5px 0;
+.grey_section{
+  background-color: #f7f7f7;
+
+  .title{margin-bottom: 20px;}
+  [class*='col-']:nth-child(1){
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 262px;
+      height: 182px;
+      left: 310px;
+      background: url(../img/dots.png)
+    }
   }
 }
 
+#sec_03{
+  padding: 60px 0 50px;
+  .title{margin-top: 55px}
+  [class*='col-']:nth-child(1):before{
+    bottom: -240px;
+  }
+}
+
+#sec_06{
+  padding: 50px 0 25px;
+  [class*='col-']:nth-child(1):before{
+    bottom: -190px;
+  }
+}
+
+#sec_08{
+  padding: 55px 0 20px;
+  [class*='col-']:nth-child(1):before{
+    bottom: -190px;
+  }
+  .sec_img{
+    margin-left: -60px;
+  }
+}
+
+#sec_10{
+  padding: 40px 0 50px;
+  [class*='col-']:nth-child(1):before{
+    bottom: -190px;
+  }
+  .title{
+    margin-top: 90px;
+  }
+  .sec_img{
+    margin-left: -40px;
+  }
+}
+
+#sec_12{
+  padding: 60px 0 25px;
+  [class*='col-']:nth-child(1):before{
+    bottom: -190px;
+  }
+  .title{
+    margin-top: 45px;
+  }
+  .sec_img{
+    margin-left: -75px;
+  }
+}
+
+#sec_02{
+    padding: 30px 0 40px;
+    .sec_img-2{
+        margin: 30px 0 20px;
+    }
+}
+
+#sec_04{
+  padding: 45px 0 40px;
+  .list_item{
+    margin-bottom: 25px;
+  }
+}
+
+#sec_05{
+  padding: 45px 0;
+  .list_item{
+    margin-bottom: 25px;
+  }
+}
+
+#sec_09{
+  padding: 40px 0 45px;
+  .top_text{
+    margin-bottom: 80px;
+  }
+  .btn{
+    margin: 45px auto 0;
+  }
+  .reason_row{
+    margin-top: 90px;
+  }
+}
+
+#sec_07{
+  padding: 40px 0;
+  .top_text{
+    margin-bottom: 90px;
+  }
+  .list_item{
+    margin: 25px 0;
+  }
+  .sec_img-1{
+    margin-top: 165px;
+  }
+  .row+.row{
+    margin-top: 85px;
+  }
+}
+
+#sec_11{
+  padding: 45px 0;
+  .top_text{
+    margin-bottom: 90px;
+  }
+  .list_item{
+    margin: 25px 0;
+  }
+  .sec_img-1{
+    margin-top: 140px;
+    margin-left: -40px;
+  }
+  .row+.row{
+    margin-top: 85px;
+  }
+}
+
+#sec_13{
+  padding: 40px 0 120px;
+  .first_title{
+    margin: 75px 0 40px;
+  }
+  .title_main{
+    line-height: 42px;
+  }
+  .second_title{
+    margin-bottom: 35px;
+  }
+  .row+.row{
+    margin-top: 100px;
+  }
+  .form_block{
+    padding: 60px;
+    max-width: 384px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(1, 1, 1, 0.15);
+    background-color: #ffffff;
+  }
+  .form_title{
+    margin-bottom: 10px;
+  }
+  .form_text{
+    margin-bottom: 10px;
+  }
+  .btn{
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.list_item{
+  margin-top: 20px;
+  li{
+    padding-left: 30px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 7px;
+      left: 0;
+      background: url(../img/list.png);
+    }
+  }
+  li+li{
+    margin-top: 8px;
+  }
+}
 
 footer{
   padding: 15px 0 15px;
@@ -38,5 +216,5 @@ footer{
 @import "_sketches.scss";
 @import "_media.scss";
 @import "../libs/niftymodal/component.css";
-@import "../libs/slick/slick.min.css";
+// @import "../libs/slick/slick.min.css";
 // @import "../fonts/font-awesome/font-awesome.min.css"

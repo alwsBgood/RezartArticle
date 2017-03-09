@@ -102,12 +102,6 @@ $(function() {
 });
 
 
-
-
-
-
-
-
  // Smooth scroll to anchor
 
  $('.scroll').click(function(){
@@ -120,7 +114,7 @@ $(function() {
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+9 (999) 999-9999");
+ $("input[type='tel']").mask("(999) 999-9999");
 });
 
 
@@ -135,50 +129,42 @@ $(window).scroll(function() {
 
   });
 
+// INPUT STYLIZATION
 
-//YOUTUBE
+(function() {
+    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+    if (!String.prototype.trim) {
+        (function() {
+            // Make sure we trim BOM and NBSP
+            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+            String.prototype.trim = function() {
+                return this.replace(rtrim, '');
+            };
+        })();
+    }
 
-$(function() {
-  $(".youtube").each(function() {
-    $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+    [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+            classie.add( inputEl.parentNode, 'input--filled' );
+        }
 
-    $(this).append($('<div/>', {'class': 'play'}));
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+    } );
 
-    $(document).delegate('#'+this.id, 'click', function() {
-      var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-      if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
+    function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+    }
 
-      var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+    function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' || ev.target.value.trim() == '(___) ___-____' ) {
+            classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+    }
+})();
 
-      $(this).replaceWith(iframe);
-    });
-  });
-});
-
-// Waypoint
-
-// $('#sec_03').waypoint(
-//   function() {
-//     $( "#sec_03 .item" ).addClass( "animated" );
-//     $( "#sec_03 .item" ).addClass( "flipInX" );
-//   },
-//   {offset: "550px"}
-//   );
-
-// Parallax
-
-$(window).scroll(function() {
-
-  var st = $(this).scrollTop() /100;
-  var tt = $(this).scrollTop() /100;
-
-  $(".paralax_letter").css({
-    "transform" : "translate3d(0px, " + st  + "%, .0px)",
-    "-webkit-transform" : "translate3d(0px, " + st  + "%, .0px)",
-    "-ms-transform" : "translate3d(0px, " + st  + "%, .0px)"
-  });
-
-});
 
 //  UP BUTTON
 
@@ -204,14 +190,18 @@ $( document ).ready(function() {
 
 // PREVENT SCROLLING
 
-$('*').click(function() {
-  var modal= $(".md-modal");
-  if( modal.hasClass('md-show')){
-    $("body").addClass('unscroll')
-  } else {
-    $("body").removeClass('unscroll');
-  }
+$('.md-trigger').click(function() {
+  $("body").addClass('unscroll');
 });
+
+$('.md-close').click(function() {
+  $("body").removeClass('unscroll');
+});
+
+$('.md-overlay').click(function() {
+  $("body").removeClass('unscroll');
+});
+
 
 
 // Perfect Pxel

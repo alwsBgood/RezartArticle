@@ -1,3 +1,6 @@
 @import "bourbon";
 
-@include font-face("Roboto", "fonts/Roboto", $file-formats: woff woff2);
+@include font-face("Gilroy-Light", "fonts/Gilroy-Light", $file-formats: woff woff2);
+
+@include font-face("Gilroy-ExtraBold", "fonts/Gilroy-ExtraBold", $file-formats: woff woff2);
+
