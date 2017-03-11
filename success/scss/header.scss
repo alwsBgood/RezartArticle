@@ -1,0 +1,178 @@
+@import "bourbon";
+@import "vars.scss";
+
+body {
+	position: relative;
+	font: 16px/24px $main_font;
+	color: #28292d;
+	background-color: #fff;
+}
+
+body.unscroll{
+	overflow: hidden;
+}
+
+.text--title{
+    font-family: $bold_font;
+}
+
+
+.md-modal.md-show{
+    opacity: 1;
+  }
+.md-modal{
+    opacity: 0;
+  }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ /* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,  0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: $main_color;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $main_color;
+}
+
+.hidden{
+    height: 0;
+    width: 0;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0 15px;
+  background-color: #202020;
+  .politics{
+    margin-top: 17px;
+    a{
+      color: #65666a;
+      font-size: 14px;
+    }
+    a:hover{color: $main_color;}
+    a+a{margin-left: 10px;}
+  }
+  .logo_rezart{
+    margin-top: -10px;
+    margin-bottom: -5px;
+    margin-left: 25px;
+    width: 80px;
+    // margin-right: 20px;
+    float: right;
+    svg{
+      width: 80px;
+      fill: #fff;
+      border-radius: 50%;
+      transition: .3s;
+      &:hover{
+        fill: $main_color;
+      }
+    }
+  }
+}
+
+section{
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-image: url(img/bl0_bg.jpg);
+  min-height: 100vh;
+  position: relative;
+  padding: 120px 0 85px;
+  .content{
+    margin: 180px 0 60px;
+  }
+  h1{
+    color: #28292d;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .afterheader{
+    font-size: 24px;
+    margin-bottom: 20px;  
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  section{
+    .sec_img{
+      width: 100%;
+    }
+  }
+  footer{
+    .politics a{
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media screen and (max-height: 820px){
+  .md_large .md_content {max-height: 320px;}
+  section{
+    padding-top: 60px;
+    .content{
+      margin: 190px 0 60px;
+    }
+  }
+}
+
+@media screen and (max-height: 680px){
+  .md_large .md_content {max-height: 320px;}
+  section{
+    padding-top: 60px;
+    .content{
+      margin: 90px 0 60px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  br{display: none}
+  [class*='col-']{
+    width: 100%;
+    text-align: center
+  }
+  section{
+    padding: 60px 0 210px ;
+    .content{
+      margin-top: 40px;
+    }
+    .sec_img{
+      width: 120px;
+      margin-bottom: 40px;
+    }
+  }
+  footer{
+    text-align: center;
+    .politics{
+      a{
+         font-size: 14px;
+         display: block;
+         text-align: center;
+       }
+     a+a{margin-left: 0 }
+    }
+    .logo_rezart{
+      display: inline-block;
+      float: none;
+      margin-top: 20px;
+    }
+  }
+  div[id*='modal_politics']{
+    h2{padding-top: 70px;}
+    .btn_close_modal{
+      top: 20px;
+    }
+  }
+}

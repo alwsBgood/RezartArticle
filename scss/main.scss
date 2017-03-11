@@ -72,28 +72,28 @@
 }
 
 #sec_02{
-    padding: 30px 0 40px;
+    padding: 90px 0;
     .sec_img-2{
         margin: 30px 0 20px;
     }
 }
 
 #sec_04{
-  padding: 45px 0 40px;
+  padding: 90px 0;
   .list_item{
     margin-bottom: 25px;
   }
 }
 
 #sec_05{
-  padding: 45px 0;
+  padding: 90px 0;
   .list_item{
     margin-bottom: 25px;
   }
 }
 
 #sec_09{
-  padding: 40px 0 45px;
+  padding: 90px 0;
   .top_text{
     margin-bottom: 80px;
   }
@@ -106,7 +106,7 @@
 }
 
 #sec_07{
-  padding: 40px 0;
+  padding: 90px 0;
   .top_text{
     margin-bottom: 90px;
   }
@@ -122,7 +122,7 @@
 }
 
 #sec_11{
-  padding: 45px 0;
+  padding: 90px 0;
   .top_text{
     margin-bottom: 90px;
   }
@@ -139,7 +139,7 @@
 }
 
 #sec_13{
-  padding: 40px 0 120px;
+  padding: 80px 0 120px;
   .first_title{
     margin: 75px 0 40px;
   }
@@ -168,6 +168,7 @@
   .btn{
     width: 100%;
     margin-top: 40px;
+    font-size: 12px;
   }
 }
 
@@ -204,11 +205,21 @@ footer{
     a+a{margin-left: 10px;}
   }
   .logo_rezart{
-    margin-top: 5px;
+    margin-top: -10px;
+    margin-bottom: -10px;
     margin-left: 25px;
     width: 80px;
     // margin-right: 20px;
     float: right;
+    svg{
+      width: 80px;
+      fill: #fff;
+      border-radius: 50%;
+      transition: .3s;
+      &:hover{
+        fill: $main_color;
+      }
+    }
   }
 }
 

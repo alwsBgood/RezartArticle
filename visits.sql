@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `visits` (
   `affiliate_id` varchar(255) NOT NULL,
   `click_id` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=49621 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;
 
 --
 -- Дамп данных таблицы `visits`

@@ -1,29 +1,6 @@
 @import "bourbon";
 @import "vars.scss";
 
-/* ================================*/
-/* CURSOR STYLES*/
-.touch_mode_grab {
-cursor: grab !important;
-cursor: -webkit-grab !important;
-}
-
-.touch_mode_grabbing {
-cursor: grabbing !important;
-cursor: -webkit-grabbing !important;
-}
-
-
-/* ==========================*/
-
-.tabs__content {
-  display: none !important;
-}
-
-.tabs__content.active {
-  display: block !important;
-}
-
 
 .hidden{
     height: 0;
@@ -35,7 +12,7 @@ div[id*="modal_callback"]{
   h2{
     font-size: 29px;
     line-height: 36px;
-    margin: 30px 30px 0px;
+    margin: 30px;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
@@ -187,9 +164,9 @@ div[id*="modal_politics"]{
 
 .btn_close_modal{
   position: absolute;
-  right: 30px;
+  right: 15px;
   z-index: 10;
-  top: 30px;
+  top: 15px;
   svg{width: 40px;}
   display: block;
   width: 40px;
