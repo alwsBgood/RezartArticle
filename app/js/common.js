@@ -118,17 +118,6 @@ jQuery(function($){
 });
 
 
-
-// Scroll BAR
-
-$(window).scroll(function() {
-    // calculate the percentage the user has scrolled down the page
-    var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-
-    $('.bar-long').css('width', scrollPercent +"%"  );
-
-  });
-
 // INPUT STYLIZATION
 
 (function() {
@@ -187,6 +176,17 @@ $( document ).ready(function() {
     $('body,html').animate({scrollTop:0},1000);
   });
 });
+
+
+// Scroll BAR
+
+$(window).scroll(function() {
+    // calculate the percentage the user has scrolled down the page
+    var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+
+    $('.bar-long').css('width', scrollPercent +"%"  );
+
+  });
 
 // PREVENT SCROLLING
 
