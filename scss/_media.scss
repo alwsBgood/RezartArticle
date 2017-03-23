@@ -2,28 +2,6 @@
 @import "vars.scss";
 
 @media (min-width: 768px) and (max-width: 991px){
-  .block_text, .list_item{
-    br{
-      display: none;
-    }
-  }
-  [class*='sec_img']{
-    width: 100%;
-    max-width: 290px;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  #sec_01 {
-    h1{
-      margin-top: 80px;
-      br{
-        display: none;
-      }
-    }
-    .sec_img-1 {
-       margin-top: 0;
-     }
-  }
   #sec_02{
     .sec_img-2 {
       max-width: 610px;
@@ -72,25 +50,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-  .block_text, .list_item{
-    br{
-      display: none;
-    }
-  }
-  [class*='sec_img']{
-    width: 100%;
-    max-width: 290px;
-  }
-  #sec_01 {
-    .sec_img-1 {
-       margin-top: 0;
-     }
-  }
-  #sec_02{
-    .sec_img-2 {
-      max-width: 610px;
-    }
-  }
   #sec_03 {
     .title {
       margin-top: 25px;
@@ -114,50 +73,6 @@
 }
 
 @media (max-width: 767px) {
-  br{
-    display: none;
-  }
-  .title_main{
-    font-size: 30px;
-  }
-  [class*='col-']{
-    width: 100%;
-    margin-left: 0;
-  }
-  .block_text, .list_item{
-    br{
-      display: none;
-    }
-  }
-  [class*='sec_img']{
-    display: block;
-    margin: 30px auto !important;
-    max-width: 300px;
-  }
-  #sec_01 {
-    h1{
-      margin-top: 40px;
-      font-size: 36px;
-      line-height: 44px;
-      br{
-        display: none;
-      }
-    }
-    .sec_img-1 {
-       // margin-top: 0;
-       display: none;
-     }
-     .sec_img-2{
-        display: none;
-     }
-  }
-  #sec_02{
-    padding-top: 00px;
-    .sec_img-2 {
-      max-width: 610px;
-      width: 100%;
-    }
-  }
   #sec_03 {
     .title {
       margin-top: 25px;
@@ -263,24 +178,5 @@
     .btn_close_modal{
       top: 20px;
     }
-  }
-}
-
-
-@media (max-width: 490px) {
-  [class*='sec_img']{
-    display: block;
-    margin: 30px auto !important;
-    max-width: 280px;
-    width: 100%;
-  }
-  #sec_01{
-    h1{
-      font-size: 30px;
-      line-height: 36px;
-    }
-  }
-  .title_main{
-    font-size: 26px;
   }
 }
