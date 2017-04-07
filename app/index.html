@@ -375,8 +375,7 @@
                     <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
                         <!-- Hidden DB Fields -->
 
-                        <!-- <input type="hidden" id="registrationType" name="registrationType" value="default_registration"> -->
-                        <!-- <input type="hidden" id="orderType" name="orderType" value="Zayavka"> -->
+                        <input type="hidden" name="orderType" value="ROI">
                         <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
                         <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
                         <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
@@ -386,18 +385,13 @@
                         <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
                         <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
                         <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
-                        <input type="hidden" name="city" value="<?php echo $data['city']; ?>">
+                        <input type="hidden" name="city" value="">
                         <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
                         <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
                         <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
                         <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
                         <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
                         <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
-
-                        <!-- Zoho -->
-                    <!--     <input type="hidden" name="product_id" value="1212">
-                        <input type="hidden" name="product_name" value="&laquo;BootCamp 2&raquo;"> -->
-                        <!-- Zoho -->
 
                         <!-- END Hidden DB Fields -->
 
@@ -425,15 +419,6 @@
 
                         <button type="submit" class="btn" name="send" >Получить мой чек-лист</button>
 
-                        <!-- Просто любое дополнительное поле -->
-                        <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
-                        <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-                        <input type="hidden" class="pacet" name="form_pacet" value="">
-                        <!-- GET RESPONCE INPUTS -->
-                        <input type="hidden" name="start_day" value="0"/>
-                        <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-                        <input type="hidden" name="campaign_token" value=""/>
-                        <!-- GET RESPONCE INPUTS -->
                         <div class="clear"></div>
 
 
@@ -477,8 +462,7 @@
                 <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
                     <!-- Hidden DB Fields -->
 
-                    <input type="hidden" id="registrationType" name="registrationType" value="default_registration">
-                    <input type="hidden" id="orderType" name="orderType" value="Zayavka">
+                    <input type="hidden" name="orderType" value="ROI">
                     <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
                     <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
                     <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
@@ -488,18 +472,13 @@
                     <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
                     <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
                     <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
-                    <input type="hidden" name="city" value="<?php echo $data['city']; ?>">
+                    <input type="hidden" name="city" value="">
                     <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
                     <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
                     <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
                     <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
                     <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
                     <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
-
-                    <!-- Zoho -->
-                <!--     <input type="hidden" name="product_id" value="1212">
-                    <input type="hidden" name="product_name" value="&laquo;BootCamp 2&raquo;"> -->
-                    <!-- Zoho -->
 
                     <!-- END Hidden DB Fields -->
 
@@ -561,8 +540,7 @@
                     <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
                         <!-- Hidden DB Fields -->
 
-                        <input type="hidden" id="registrationType" name="registrationType" value="default_registration">
-                        <input type="hidden" id="orderType" name="orderType" value="Zayavka">
+                        <input type="hidden" name="orderType" value="ROI">
                         <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
                         <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
                         <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
@@ -572,18 +550,13 @@
                         <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
                         <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
                         <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
-                        <input type="hidden" name="city" value="<?php echo $data['city']; ?>">
+                        <input type="hidden" name="city" value="">
                         <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
                         <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
                         <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
                         <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
                         <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
                         <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
-
-                        <!-- Zoho -->
-                    <!--     <input type="hidden" name="product_id" value="1212">
-                        <input type="hidden" name="product_name" value="&laquo;BootCamp 2&raquo;"> -->
-                        <!-- Zoho -->
 
                         <!-- END Hidden DB Fields -->
 
@@ -618,15 +591,7 @@
 
                         <button type="submit" class="btn" name="send" data-text="Перезвоните мне">Получить чек-лист</button>
 
-                        <!-- Просто любое дополнительное поле -->
-                        <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
-                        <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-                        <input type="hidden" class="pacet" name="form_pacet" value="">
-                        <!-- GET RESPONCE INPUTS -->
-                        <input type="hidden" name="start_day" value="0"/>
-                        <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-                        <input type="hidden" name="campaign_token" value=""/>
-                        <!-- GET RESPONCE INPUTS -->
+
                         <div class="clear"></div>
 
 
@@ -741,6 +706,7 @@
 
     <!-- Load Scripts Start -->
     <script>var scr = {"scripts":[
+        {"src" : "http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU", "async" : false},
         {"src" : "js/libs.js", "async" : false},
         {"src" : "js/common.js", "async" : false}
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
